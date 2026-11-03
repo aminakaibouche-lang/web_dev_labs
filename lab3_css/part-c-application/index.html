@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A TechNova summer internship page .">
+    <title>TechNova ,Summer Internships</title>
+</head>
+
+<body>
+    <header>
+        <form action="https://httpbin.org/get" method="get">
+            <input type="search" id="q" name="q" placeholder="Search ">
+            <button type="submit">Submit</button>
+        </form>
+    </header>
+    <br>
+    <section>
+        <picture>
+            <source media="(min-width:800px)" srcset="media/banner-1280.jpg">
+            <img src="media/banner-640.jpg" alt="TechNova Summer Internships" loading="lazy">
+        </picture>
+    </section>
+    <section>
+        <br>
+
+        <video controls poster="media/poster.jpg">
+            <source src="media/presentation.mp4" type="video/mp4">
+            <source src="media/presentation.webm" type="video/webm">
+            <track src="media/captions-en.vtt" kind="captions" srclang="en" label="English" default>
+        </video>
+    </section>
+    <br>
+
+    <section>
+        <label for="places-taken">Places taken:</label>
+        <meter id="places-taken" value="18" min="0" max="30"></meter>
+
+        <label for="Campaign">Progress bar:</label>
+        <progress id="Campaign" value="40" max="100">40%</progress>
+        <h2>Application form</h2>
+    </section>
+
+    <section>
+        <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+            <label for="#city">City: </label>
+            <input id="city" type="text" name="city" list="cities">
+            <datalist id="cities">
+                <option value="Algiers">
+                <option value="Oran">
+                <option value="Constantine">
+                <option value="Annaba">
+            </datalist>
+
+            <label for="speciality">Speciality :</label>
+            <select id="speciality" name="speciality" required>
+                <option value="" selected disabled> choose a speciality</option>
+
+                <optgroup label="Computer Science">
+                    <option value="AI">Artificial Intelligence</option>
+                    <option value="Web">Web Development</option>
+                    <option value="Data">Data Science</option>
+                </optgroup>
+
+                <optgroup label="Engineering">
+                    <option value="Networks">Networks</option>
+                    <option value="Security">Cybersecurity</option>
+                </optgroup>
+            </select>
+
+            <label for="cv">Upload your CV (PDF only)</label>
+            <input type="file" id="cv" name="cv" accept=".pdf,application/pdf">
+            <br><br>
+            <label for="motivation">Motivation:</label>
+            <textarea id="motivation" name="motivation" rows="5" cols="40"></textarea>
+
+
+            <details>
+                <summary>?</summary>
+                <p>Explain why you are applying and describe your skills.</p>
+            </details>
+
+            <input type="hidden" id="source" name="source" value="lab2">
+
+            <button type="submit">Apply</button>
+
+            <button type="submit" formaction="https://httpbin.org/anything" formnovalidate>
+                Save draft
+            </button>
+        </form>
+    </section>
+
+
+    <section>
+        <h2>Frequently Asked Questions</h2>
+
+        <details>
+            <summary>What is this application for?</summary>
+            <p>It allows you to submit your application details.</p>
+        </details>
+
+        <details>
+            <summary>Which file format is accepted?</summary>
+            <p>PDF files are accepted for the CV.</p>
+        </details>
+
+        <details>
+            <summary>Can I save my application as a draft?</summary>
+            <p>Yes, click Save draft to submit without normal validation.</p>
+        </details>
+    </section>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

@@ -15,15 +15,18 @@
             <button type="submit">Submit</button>
         </form>
     </header>
-    <br>
+    <main>
+        
     <section>
+        <h1>TechNova Summer Internships</h1>
+        <p>Welcome to the TechNova summer internship application page. Please fill out the form below to apply for our internship program.</p>
         <picture>
             <source media="(min-width:800px)" srcset="media/banner-1280.jpg">
             <img src="media/banner-640.jpg" alt="TechNova Summer Internships" loading="lazy">
         </picture>
     </section>
     <section>
-        <br>
+        <h2>Internship Presentation</h2>
 
         <video controls poster="media/poster.jpg">
             <source src="media/presentation.mp4" type="video/mp4">
@@ -31,20 +34,22 @@
             <track src="media/captions-en.vtt" kind="captions" srclang="en" label="English" default>
         </video>
     </section>
-    <br>
+    
 
     <section>
+        <h2>Application Statistics</h2>
         <label for="places-taken">Places taken:</label>
-        <meter id="places-taken" value="18" min="0" max="30"></meter>
+        <meter id="places-taken" value="18" min="0" max="30">18 out of 30</meter>
 
         <label for="Campaign">Progress bar:</label>
         <progress id="Campaign" value="40" max="100">40%</progress>
-        <h2>Application form</h2>
+        
     </section>
 
     <section>
+        <h2>Application form</h2>
         <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
-            <label for="#city">City: </label>
+            <label for="city">City: </label>
             <input id="city" type="text" name="city" list="cities">
             <datalist id="cities">
                 <option value="Algiers">
@@ -69,9 +74,9 @@
                 </optgroup>
             </select>
 
-            <label for="cv">Upload your CV (PDF only)</label>
+            <label for="cv">Upload your CV (PDF only):</label>
             <input type="file" id="cv" name="cv" accept=".pdf,application/pdf">
-            <br><br>
+            
             <label for="motivation">Motivation:</label>
             <textarea id="motivation" name="motivation" rows="5" cols="40"></textarea>
 
@@ -110,9 +115,9 @@
             <p>Yes, click Save draft to submit without normal validation.</p>
         </details>
     </section>
-
+    </main>
     <footer>
-
+        <p>© 2026 TechNova. All rights reserved.</p>
     </footer>
 </body>
 

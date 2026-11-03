@@ -2,138 +2,174 @@
 
 <html>
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A hackathon event page featuring event details, related events, a schedule, practical information, and contact links.">
+    <meta name="description"
+        content="A hackathon event page featuring event details, related events, a schedule, practical information, and contact links.">
     <title>Page Title</title>
-</head>
+    <link rel="stylesheet" href="css/style.css" </head>
 
 <body>
+    <header class="nav-bar">
+            <div class="profile">
+                <img src="images/logo.svg" alt="profile picture" class="logo">
+                <h3 class="name"> ENSIA AI Club </h3>
+            </div>
 
-    <img src="images/logo.svg" alt="profile picture">
-    <h3> ENSIA AI Club </h3>
+            <nav class="links">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Events</a></li>
+                    <li><a href="">Members</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        
+    </header>
+    <main>
+        <article>
+        <section class="home">
+            <h1>Hackathon 2026: 48 Hours to Build Smarter Cities</h1>
 
-    <ul>
-        <li><a href="">Home</a>
-        <li><a href="">Events</a>
-        <li><a href="">Members</a>
-        <li><a href="">Contact</a>
-    </ul>
-
-    <h1>Hackathon 2026: 48 Hours to Build Smarter Cities</h1>
-
-    <p>
-        Published on October 12, 2026 by <i>the AI Club team</i>
-    </p>
-
-
-    <figure>
-        <img src="images/hackathon.svg"
-            alt="Hackathon event illustration set in a teal main hall with three desk stations across a wide table, each station featuring a computer screen and a small team working together. The scene has a welcoming, energetic mood and includes the text Hackathon 2025, Main Hall. The wider environment is a bright workshop space designed for collaboration and innovation."
-            width="400" height="300">
-        <figcaption>Last year, 24 teams competed in the main hall.</figcaption>
-    </figure>
+            <p>
+                Published on October 12, 2026 by <i>the AI Club team</i>
+            </p>
 
 
-
-    <p>
-        The AI Club invites all students to its annual hackathon. In teams of three
-        to five, you will design a prototype that makes our cities<strong> cleaner, safer, or easier to live
-            in.</strong>No prior experience is required: mentors will help you all weekend.
-    </p>
-
-    <h2> Programme </h2>
+            <figure class="event-image">
+                <img src="images/hackathon.svg"
+                    alt="Hackathon event illustration set in a teal main hall with three desk stations across a wide table, each station featuring a computer screen and a small team working together. The scene has a welcoming, energetic mood and includes the text Hackathon 2025, Main Hall. The wider environment is a bright workshop space designed for collaboration and innovation."
+                    width="400" height="300">
+                <figcaption>Last year, 24 teams competed in the main hall.</figcaption>
+            </figure>
 
 
 
+            <p>
+                The AI Club invites all students to its annual hackathon. In teams of three
+                to five, you will design a prototype that makes our cities<strong> cleaner, safer, or easier to live
+                    in.</strong>No prior experience is required: mentors will help you all weekend.
+            </p>
+        </section>
+        <section class="programme">
+            <h2> Programme </h2>
 
-    <table>
-        <caption>
-            Hackathon schedule, November 2026
-        </caption>
-        <tr>
-            <th> Day </th>
-            <th> Time </th>
-            <th> Activity </th>
-            <th>Room </th>
-        </tr>
-        <tr>
-            <th rowspan="2">Friday 13</th>
-            <td>17:00 </td>
-            <td>Opening and team formation</td>
-            <td>Amphi 1</td>
-        </tr>
-        <tr>
+            <table>
+                <caption>
+                    Hackathon schedule, November 2026
+                </caption>
+                <thead> 
+                    <tr>
+                        <th> Day </th>
+                        <th> Time </th>
+                        <th> Activity </th>
+                        <th>Room </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th rowspan="2">Friday 13</th>
+                        <td>17:00 </td>
+                        <td>Opening and team formation</td>
+                        <td>Amphi 1</td>
+                    </tr>
 
-            <td>18:30 </td>
-            <td>Coding starts</td>
-            <td>Main Hall</td>
-        </tr>
-        <tr>
+                    <tr>
 
-            <th rowspan="2">Saturday 14</th>
-            <td> 10:00</td>
-            <td> Mentor sessions </td>
-            <td>Labs B1 to B4</td>
+                        <td>18:30 </td>
+                        <td>Coding starts</td>
+                        <td>Main Hall</td>
+                    </tr>
+                    <tr>
 
-        </tr>
-        <tr>
-            <td> 21:00</td>
-            <td> Pizza night </td>
-            <td>Cafeteria</td>
+                        <th rowspan="2">Saturday 14</th>
+                        <td> 10:00</td>
+                        <td> Mentor sessions </td>
+                        <td>Labs B1 to B4</td>
 
-        </tr>
-        <tr>
+                    </tr>
+                    <tr>
+                        <td> 21:00</td>
+                        <td> Pizza night </td>
+                        <td>Cafeteria</td>
 
-            <th>Sunday 15</th>
-            <td> 14:00</td>
-            <td> Demos and awards </td>
-            <td>Labs B1 to B4</td>
+                    </tr>
+                    <tr>
 
-        </tr>
+                        <th>Sunday 15</th>
+                        <td> 14:00</td>
+                        <td> Demos and awards </td>
+                        <td>Labs B1 to B4</td>
 
-    </table>
-    <h2>Prizes </h2>
-    <ol>
-        <li>First Place: a two-week internship at partner company</li>
-        <li>Second Place: development boards for each team member</li>
-        <li>Third Place: online course vouchers</li>
-    </ol>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-    <h2>
-        Who can participate?
-    </h2>
-    <ul>
-        <li>All ENSIA students, from first to fifth year</li>
-        <li>Teams must include :</li>
-        <ul>
-            <li>At least one first- or second- year student</li>
-            <li>At most five members</li>
-        </ul>
-    </ul>
+        <section class="prizes">
+            <h2>Prizes </h2>
+            <ol>
+                <li>First Place: a two-week internship at partner company</li>
+                <li>Second Place: development boards for each team member</li>
+                <li>Third Place: online course vouchers</li>
+            </ol>
+        </section>
+        <section class="participation">
+            <h2>
+                Who can participate?
+            </h2>
+            <ul>
+                <li>All ENSIA students, from first to fifth year</li>
+                <li>Teams must include :</li>
+                <ul>
+                    <li>At least one first- or second- year student</li>
+                    <li>At most five members</li>
+                </ul>
+            </ul>
 
-    <q>We arrived with an idea on a napkin and left with a working prototype and new friends.</q>
-    <p>&ndash; Sara M., winner of the 2025 edition </p>
+            <q>We arrived with an idea on a napkin and left with a working prototype and new friends.</q>
+            <p>&ndash; Sara M., winner of the 2025 edition </p>
+        </section>
+        <section class="practical-info">
+            <h2>Practical Information</h2>
+            <dl>
 
-    <h2>Practical Information</h2>
-    <dl>
-        <dt>Dates</dt>
-        <dd>November 13-15,2026</dd>
-        <dt>Venue</dt>
-        <dd>ENSIA ,Sidi Abdellah,Algiers</dd>
-        <dt>registration fee</dt>
-        <dd>Free(places are limited to 30 teams)</dd>
-    </dl>
-    <a href="register.html">Register your team before November 6</a>
+                <div>
+                <dt>Dates</dt>
+                <dd>November 13-15,2026</dd>
+                </div>
 
-    <h2>Related events</h2>
-    <ul>
-        <li><a href="">Intro Machine Learning workshop</a></li>
-        <li><a href="">Robotics Club open day</a></li>
-    </ul>
-    <flooter>
+                <div>
+                <dt>Venue</dt>
+                <dd>ENSIA ,Sidi Abdellah,Algiers</dd>
+                </div>
+
+                <div>
+                <dt>registration fee</dt>
+                <dd>Free(places are limited to 30 teams)</dd>
+                </div>
+
+            </dl>
+            <a href="register.html">Register your team before November 6</a>
+        </section>
+
+        </article>
+        
+        <aside class="related-events">
+            <h2>Related events</h2>
+            <ul>
+                <li><a href="">Intro Machine Learning workshop</a></li>
+                <li><a href="">Robotics Club open day</a></li>
+            </ul>
+        </aside>
+        
+    </main>
+
+    <footer>
         <p> &copy; 2026 ENSIA AI Club <a href="mailto:aiclub@ensia.edu.dz">aiclub@ensia.edu.dz</a></p>
-        </footer>
+        
+    </footer>
 
 </html>
